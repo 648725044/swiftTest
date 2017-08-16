@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B4DFDBC1F43D00000B1FC4B /* UIViewController+fzextention.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B4DFDBB1F43D00000B1FC4B /* UIViewController+fzextention.m */; };
 		1B9930061F414D1F00152707 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9930051F414D1F00152707 /* AppDelegate.swift */; };
 		1B9930081F414D1F00152707 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9930071F414D1F00152707 /* ViewController.swift */; };
 		1B99300B1F414D1F00152707 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B9930091F414D1F00152707 /* Main.storyboard */; };
@@ -38,6 +39,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1B4DFDB61F43CFEC00B1FC4B /* SimpleSwift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SimpleSwift-Bridging-Header.h"; sourceTree = "<group>"; };
+		1B4DFDBA1F43D00000B1FC4B /* UIViewController+fzextention.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+fzextention.h"; sourceTree = "<group>"; };
+		1B4DFDBB1F43D00000B1FC4B /* UIViewController+fzextention.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+fzextention.m"; sourceTree = "<group>"; };
 		1B9930021F414D1F00152707 /* SimpleSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B9930051F414D1F00152707 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1B9930071F414D1F00152707 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -85,6 +89,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1B4DFDB51F43CE1900B1FC4B /* OC */ = {
+			isa = PBXGroup;
+			children = (
+				1B4DFDBA1F43D00000B1FC4B /* UIViewController+fzextention.h */,
+				1B4DFDBB1F43D00000B1FC4B /* UIViewController+fzextention.m */,
+				1B4DFDB61F43CFEC00B1FC4B /* SimpleSwift-Bridging-Header.h */,
+			);
+			name = OC;
+			sourceTree = "<group>";
+		};
 		1B992FF91F414D1F00152707 = {
 			isa = PBXGroup;
 			children = (
@@ -110,6 +124,7 @@
 		1B9930041F414D1F00152707 /* SimpleSwift */ = {
 			isa = PBXGroup;
 			children = (
+				1B4DFDB51F43CE1900B1FC4B /* OC */,
 				1B9930051F414D1F00152707 /* AppDelegate.swift */,
 				1B9930071F414D1F00152707 /* ViewController.swift */,
 				1B9930091F414D1F00152707 /* Main.storyboard */,
@@ -229,6 +244,7 @@
 				TargetAttributes = {
 					1B9930011F414D1F00152707 = {
 						CreatedOnToolsVersion = 8.3.2;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 					1B9930151F414D1F00152707 = {
@@ -343,6 +359,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B4DFDBC1F43D00000B1FC4B /* UIViewController+fzextention.m in Sources */,
 				1B9930081F414D1F00152707 /* ViewController.swift in Sources */,
 				1B9930361F41523C00152707 /* Animal.swift in Sources */,
 				1B9930381F41534900152707 /* Home.swift in Sources */,
@@ -500,11 +517,14 @@
 			baseConfigurationReference = 46F3FC56893490FCB75B9BBE /* Pods-SimpleSwift.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = SimpleSwift/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sky-light-hw.SimpleSwift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SimpleSwift/SimpleSwift-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -514,11 +534,13 @@
 			baseConfigurationReference = FB8A26BFC1D271AB7A90144A /* Pods-SimpleSwift.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = SimpleSwift/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sky-light-hw.SimpleSwift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SimpleSwift/SimpleSwift-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
