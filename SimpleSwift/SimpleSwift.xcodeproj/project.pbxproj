@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B0286651F46F2BE00F8252E /* LoggerClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B02865F1F46F2BE00F8252E /* LoggerClient.m */; };
+		1B0286661F46F2BF00F8252E /* LoggerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B0286621F46F2BE00F8252E /* LoggerManager.m */; };
+		1B0286671F46F2BF00F8252E /* NSLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B0286641F46F2BE00F8252E /* NSLogger.swift */; };
 		1B4DFDBC1F43D00000B1FC4B /* UIViewController+fzextention.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B4DFDBB1F43D00000B1FC4B /* UIViewController+fzextention.m */; };
 		1B9930061F414D1F00152707 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9930051F414D1F00152707 /* AppDelegate.swift */; };
 		1B9930081F414D1F00152707 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9930071F414D1F00152707 /* ViewController.swift */; };
@@ -39,6 +42,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1B02865E1F46F2BE00F8252E /* LoggerClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoggerClient.h; sourceTree = "<group>"; };
+		1B02865F1F46F2BE00F8252E /* LoggerClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoggerClient.m; sourceTree = "<group>"; };
+		1B0286601F46F2BE00F8252E /* LoggerCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoggerCommon.h; sourceTree = "<group>"; };
+		1B0286611F46F2BE00F8252E /* LoggerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoggerManager.h; sourceTree = "<group>"; };
+		1B0286621F46F2BE00F8252E /* LoggerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoggerManager.m; sourceTree = "<group>"; };
+		1B0286631F46F2BE00F8252E /* NSLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSLogger.h; sourceTree = "<group>"; };
+		1B0286641F46F2BE00F8252E /* NSLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSLogger.swift; sourceTree = "<group>"; };
 		1B4DFDB61F43CFEC00B1FC4B /* SimpleSwift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SimpleSwift-Bridging-Header.h"; sourceTree = "<group>"; };
 		1B4DFDBA1F43D00000B1FC4B /* UIViewController+fzextention.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+fzextention.h"; sourceTree = "<group>"; };
 		1B4DFDBB1F43D00000B1FC4B /* UIViewController+fzextention.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+fzextention.m"; sourceTree = "<group>"; };
@@ -89,6 +99,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1B02865D1F46F2BE00F8252E /* NSLogger */ = {
+			isa = PBXGroup;
+			children = (
+				1B02865E1F46F2BE00F8252E /* LoggerClient.h */,
+				1B02865F1F46F2BE00F8252E /* LoggerClient.m */,
+				1B0286601F46F2BE00F8252E /* LoggerCommon.h */,
+				1B0286611F46F2BE00F8252E /* LoggerManager.h */,
+				1B0286621F46F2BE00F8252E /* LoggerManager.m */,
+				1B0286631F46F2BE00F8252E /* NSLogger.h */,
+				1B0286641F46F2BE00F8252E /* NSLogger.swift */,
+			);
+			path = NSLogger;
+			sourceTree = "<group>";
+		};
 		1B4DFDB51F43CE1900B1FC4B /* OC */ = {
 			isa = PBXGroup;
 			children = (
@@ -124,6 +148,7 @@
 		1B9930041F414D1F00152707 /* SimpleSwift */ = {
 			isa = PBXGroup;
 			children = (
+				1B02865D1F46F2BE00F8252E /* NSLogger */,
 				1B4DFDB51F43CE1900B1FC4B /* OC */,
 				1B9930051F414D1F00152707 /* AppDelegate.swift */,
 				1B9930071F414D1F00152707 /* ViewController.swift */,
@@ -363,9 +388,12 @@
 				1B4DFDBC1F43D00000B1FC4B /* UIViewController+fzextention.m in Sources */,
 				1B9930081F414D1F00152707 /* ViewController.swift in Sources */,
 				1B9930361F41523C00152707 /* Animal.swift in Sources */,
+				1B0286651F46F2BE00F8252E /* LoggerClient.m in Sources */,
 				1B9930381F41534900152707 /* Home.swift in Sources */,
+				1B0286661F46F2BF00F8252E /* LoggerManager.m in Sources */,
 				1B9930341F41521000152707 /* People.swift in Sources */,
 				1B9930061F414D1F00152707 /* AppDelegate.swift in Sources */,
+				1B0286671F46F2BF00F8252E /* NSLogger.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
